@@ -1,0 +1,1 @@
+export const KING_CAFE_LOGO  = "../../public/Image/king-cafe.png";
