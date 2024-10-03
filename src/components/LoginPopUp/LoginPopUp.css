@@ -1,0 +1,133 @@
+/* Main popup background */
+.login-popup {
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container for the form */
+  .login-popup-container {
+    width: max(25vw, 380px); /* Increase width for larger screens */
+    background-color: white;
+    padding: 30px 40px; /* Increased padding for better spacing */
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 14px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    animation: fadeIn 0.5s;
+    position: relative;
+  }
+  
+  /* Title with close icon */
+  .login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .login-popup-title img {
+    width: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .login-popup-title img:hover {
+    transform: scale(1.2); /* Enlarges close icon on hover */
+  }
+  
+  /* Input fields styling */
+  .login-popup-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* More gap for better separation */
+  }
+  
+  .login-popup-inputs input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 15px;
+    transition: border 0.3s ease;
+  }
+  
+  .login-popup-inputs input:focus {
+    border-color: tomato; /* Highlight input border on focus */
+  }
+  
+  /* Button styling */
+  .login-popup-container button {
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    color: white;
+    background-color: tomato;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-popup-container button:hover {
+    background-color: #ff6347; /* Darker tomato shade on hover */
+  }
+  
+  /* Terms and conditions */
+  .login-popup-condition {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: -10px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  
+  .login-popup-condition input {
+    margin-top: 5px;
+  }
+  
+  /* Text link inside the popup */
+  .login-popup p span {
+    color: tomato;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .login-popup p span:hover {
+    color: #ff6347; /* Darker tomato color on hover */
+  }
+  
+  /* Media query adjustments */
+  @media (max-width: 768px) {
+    .login-popup-container {
+      width: 80vw; /* Adapt width for tablets and smaller screens */
+      padding: 20px 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-popup-container {
+      width: 90vw; /* Adapt width for mobile screens */
+      padding: 15px 20px;
+    }
+  
+    .login-popup-title {
+      font-size: 16px; /* Adjust font size for mobile */
+    }
+  
+    .login-popup-container button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
