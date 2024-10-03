@@ -1,12 +1,13 @@
 import React from "react";
 import "./footer.css";
 import { assets } from "../../assets/assets";
+import {KING_CAFE_LOGO} from "../../utils/constant"
 const Footer = () => {
   return (
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <img src="../../../public/Image/king-cafe.png" className="footer-logo" alt="" />
+          <img src={KING_CAFE_LOGO} className="footer-logo" alt="" />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, sunt
             quo. Adipisci itaque provident voluptates maiores doloremque aliquam

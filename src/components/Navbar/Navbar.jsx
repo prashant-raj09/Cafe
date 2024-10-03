@@ -3,6 +3,8 @@ import { assets } from "../../assets/assets";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
+import {KING_CAFE_LOGO} from "../../utils/constant"
+
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("");
   const { getTotalCartAmount } = useContext(StoreContext);
@@ -11,7 +13,7 @@ const Navbar = ({ setShowLogin }) => {
       <Link to="/">
         <img
           alt="logo"
-          src="../../../public/Image/king-cafe.png"
+          src={KING_CAFE_LOGO}
           className="logo"
         />
       </Link>
