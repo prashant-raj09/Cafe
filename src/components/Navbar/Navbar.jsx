@@ -3,7 +3,7 @@ import { assets } from "../../assets/assets";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
-import {KING_CAFE_LOGO} from "../../utils/constant"
+
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("");
@@ -13,7 +13,7 @@ const Navbar = ({ setShowLogin }) => {
       <Link to="/">
         <img
           alt="logo"
-          src={KING_CAFE_LOGO}
+          src={assets.logo}
           className="logo"
         />
       </Link>
